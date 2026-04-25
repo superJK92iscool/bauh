@@ -10,7 +10,7 @@ DESCRIPTION = (
 AUTHOR = "Vinicius Moreira"
 AUTHOR_EMAIL = "vinicius_fmoreira@hotmail.com"
 NAME = 'bauh'
-URL = "https://github.com/vinifmor/" + NAME
+URL = "https://github.com/superJK92iscool/" + NAME
 
 file_dir = os.path.dirname(os.path.abspath(__file__))
 
