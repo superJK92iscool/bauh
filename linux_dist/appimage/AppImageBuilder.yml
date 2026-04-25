@@ -3,7 +3,7 @@ script:
   - rm -rf AppDir appimage-builder-cache *.AppImage *.zsync |true
   - mkdir -p AppDir/usr/share/icons/hicolor/scalable/apps
   - mkdir -p AppDir/usr/share/applications
-  - wget https://github.com/vinifmor/bauh/archive/${BAUH_VERSION}.tar.gz || exit 1
+  - wget https://github.com/superJK92iscool/bauh/archive/${BAUH_VERSION}.tar.gz || exit 1
   - tar -xf ${BAUH_VERSION}.tar.gz || exit 1
   - cd bauh-${BAUH_VERSION} || exit 1
   - rm setup.cfg setup.py requirements.txt || exit 1  # removing the outdated installation files
