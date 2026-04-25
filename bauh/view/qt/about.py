@@ -7,8 +7,8 @@ from bauh import __version__, __app_name__, ROOT_DIR
 from bauh.context import generate_i18n
 from bauh.view.util import resource
 
-PROJECT_URL = 'https://github.com/vinifmor/' + __app_name__
-LICENSE_URL = 'https://raw.githubusercontent.com/vinifmor/{}/master/LICENSE'.format(__app_name__)
+PROJECT_URL = 'https://github.com/superJK92iscool/' + __app_name__
+LICENSE_URL = 'https://raw.githubusercontent.com/superJK92iscool/{}/master/LICENSE'.format(__app_name__)
 
 
 class AboutDialog(QDialog):
