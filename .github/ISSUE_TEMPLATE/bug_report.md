@@ -12,7 +12,7 @@ Install the **staging** branch and check if the unexpected behavior is happening
 If you are on ArchLinux-based distro, you can install it through AUR (**bauh-staging**). Otherwise, you have
 to clone the repository and install it with pip:
 ```
-git clone https://github.com/vinifmor/bauh.git -b staging --depth=1
+git clone https://github.com/superJK92iscool/bauh.git -b staging --depth=1
 cd bauh
 python3 -m venv venv
 venv/bin/pip install pip --upgrade

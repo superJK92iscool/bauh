@@ -1,6 +1,6 @@
-[![GitHub release](https://img.shields.io/github/release/vinifmor/bauh.svg?label=Release)](https://github.com/vinifmor/bauh/releases/) [![PyPI](https://img.shields.io/pypi/v/bauh?label=PyPI)](https://pypi.org/project/bauh) [![AUR](https://img.shields.io/aur/version/bauh?label=AUR)](https://aur.archlinux.org/packages/bauh) [![AUR-staging](https://img.shields.io/aur/version/bauh-staging?label=AUR-staging)](https://aur.archlinux.org/packages/bauh-staging) [![License](https://img.shields.io/github/license/vinifmor/bauh?label=License)](https://github.com/vinifmor/bauh/blob/master/LICENSE) [![kofi](https://img.shields.io/badge/Ko--Fi-Donate-orange?style=flat&logo=ko-fi)](https://ko-fi.com/vinifmor)
+[![GitHub release](https://img.shields.io/github/release/superJK92iscool/bauh.svg?label=Release)](https://github.com/superJK92iscool/bauh/releases/) [![PyPI](https://img.shields.io/pypi/v/bauh?label=PyPI)](https://pypi.org/project/bauh) [![AUR](https://img.shields.io/aur/version/bauh?label=AUR)](https://aur.archlinux.org/packages/bauh) [![AUR-staging](https://img.shields.io/aur/version/bauh-staging?label=AUR-staging)](https://aur.archlinux.org/packages/bauh-staging) [![License](https://img.shields.io/github/license/superJK92iscool/bauh?label=License)](https://github.com/superJK92iscool/bauh/blob/master/LICENSE) [![kofi](https://img.shields.io/badge/Ko--Fi-Donate-orange?style=flat&logo=ko-fi)](https://ko-fi.com/vinifmor)
 
-**bauh** (baoo), formerly known as [fpakman](https://github.com/vinifmor/fpakman), is a graphical interface for managing your Linux software (packages/applications). It currently supports the following formats: AppImage, Debian and Arch Linux packages (including AUR), Flatpak, Snap and Web applications.
+**bauh** (baoo), formerly known as [fpakman](https://github.com/superJK92iscool/fpakman), is a graphical interface for managing your Linux software (packages/applications). It currently supports the following formats: AppImage, Debian and Arch Linux packages (including AUR), Flatpak, Snap and Web applications.
 
 Key features
 - A management panel where you can: search, install, uninstall, upgrade, downgrade and launch your applications
@@ -10,7 +10,7 @@ Key features
 
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/vinifmor/bauh-files/master/pictures/panel-themes.gif">
+    <img src="https://raw.githubusercontent.com/superJK92iscool/bauh-files/master/pictures/panel-themes.gif">
 </p>
 
 
@@ -41,7 +41,7 @@ Key features
 13. [bauh-files](#bauh_files)
 14. [Code structure](#code)
 15. [Roadmap](#roadmap)
-16. [Contributing](https://github.com/vinifmor/bauh/blob/master/CONTRIBUTING.md)
+16. [Contributing](https://github.com/superJK92iscool/bauh/blob/master/CONTRIBUTING.md)
 17. [Donations](#donations)
 
  
@@ -55,14 +55,14 @@ Key features
 - `qt5dxcb-plugin` (or equivalent): the package name may vary from distribution
 
 ##### Steps
-- Download the .AppImage file attached with the latest release from https://github.com/vinifmor/bauh/releases
+- Download the .AppImage file attached with the latest release from https://github.com/superJK92iscool/bauh/releases
 - Generally the desktop environment allows you to double-click the downloaded file to execute it. If that's not your case, follow the steps below from a console:
     - `chmod a+x bauh-${version}-x86_64.AppImage` (replace `${version}` by the respective downloaded version)
     - `./bauh-${version}-x86_64.AppImage`
 - If you want to integrate bauh to your desktop: click on bauh's settings menu ("sandwich") and then `Install bauh`
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vinifmor/bauh-files/master/pictures/releases/0.10.0/appim_self.png">
+  <img src="https://raw.githubusercontent.com/superJK92iscool/bauh-files/master/pictures/releases/0.10.0/appim_self.png">
 </p>
 
 
@@ -179,9 +179,9 @@ rm -rf bauh_env` (just remove the directory)
 
 To create a shortcut for bauh on your desktop menu:
 
-- Copy the files from [bauh/desktop](https://raw.githubusercontent.com/vinifmor/bauh/master/bauh/desktop/bauh.desktop) to `~/.local/share/applications` (or `/usr/share/applications` for **root**)
+- Copy the files from [bauh/desktop](https://raw.githubusercontent.com/superJK92iscool/bauh/master/bauh/desktop/bauh.desktop) to `~/.local/share/applications` (or `/usr/share/applications` for **root**)
 - Replace the `Exec` field on theses files by the bauh binary path. e.g: `Exec=/usr/bin/bauh` (or `bauh_env/bin/bauh`)
-- Copy [logo.svg](https://raw.githubusercontent.com/vinifmor/bauh-files/master/pictures/logo.svg) to `/usr/share/icons/hicolor/scalable/apps` as `bauh.svg`
+- Copy [logo.svg](https://raw.githubusercontent.com/superJK92iscool/bauh-files/master/pictures/logo.svg) to `/usr/share/icons/hicolor/scalable/apps` as `bauh.svg`
 
 
 #### <a name="autostart">Autostart: tray mode</a>
@@ -208,7 +208,7 @@ bauh is officially distributed through [PyPi](https://pypi.org/project/bauh) and
 ##### <a name="type_appimage">AppImage</a>
 
 - Supported sources: [AppImageHub](https://appimage.github.io) (applications with no releases published to GitHub are not available)
-- All available application names can be found at [apps.txt](https://github.com/vinifmor/bauh-files/blob/master/appimage/apps.txt)
+- All available application names can be found at [apps.txt](https://github.com/superJK92iscool/bauh-files/blob/master/appimage/apps.txt)
 - **Only x86_64 AppImage files are available through the search mechanism at the moment**
 - Crashes may happen during an AppImage installation if [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) is installed. It is recommended to uninstall it and reboot your system before trying to install an application.
 - Extra actions
@@ -272,7 +272,7 @@ suggestions:
     - `useradd`: required to create a simple user named **bauh-aur** (since **makepkg** does not allow building packages as the **root** user)
     - `runuser`: required to run commands as another user
 - **Repository packages currently do not support the following actions: Downgrade and History**
-- If some of your installed packages are not categorized, open a PullRequest to the **bauh-files** repository changing [categories.txt](https://github.com/vinifmor/bauh-files/blob/master/arch/categories.txt)
+- If some of your installed packages are not categorized, open a PullRequest to the **bauh-files** repository changing [categories.txt](https://github.com/superJK92iscool/bauh-files/blob/master/arch/categories.txt)
 - During bauh initialization a full AUR normalized index is saved at `~/.cache/bauh/arch/aur/index.txt`
 - Installed AUR packages have their PKGBUILD files cached at `~/.cache/bauh/arch/installed/$pkgname`
 - Packages with ignored updates are defined at `~/.config/bauh/arch/updates_ignored.txt`
@@ -349,31 +349,31 @@ categories_exp: 24  # It defines the expiration time (in HOURS) of the Snaps cat
 - It allows the installation of Web applications by typing their addresses/URLs on the search bar
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/vinifmor/bauh-files/master/pictures/web/url_search.gif">
+    <img src="https://raw.githubusercontent.com/superJK92iscool/bauh-files/master/pictures/web/url_search.gif">
 </p>
 
 
 - It offers the possibility to customize the generated app the way you want:
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/vinifmor/bauh-files/master/pictures/web/options.png">
+    <img src="https://raw.githubusercontent.com/superJK92iscool/bauh-files/master/pictures/web/options.png">
 </p>
 
 
 - It provides some suggestions coming with predefined settings, and they also can be found by their names. They are
-defined at [suggestions.yml](https://raw.githubusercontent.com/vinifmor/bauh-files/master/web/env/v1/suggestions.yml), and downloaded during the application usage.
+defined at [suggestions.yml](https://raw.githubusercontent.com/superJK92iscool/bauh-files/master/web/env/v1/suggestions.yml), and downloaded during the application usage.
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/vinifmor/bauh-files/master/pictures/web/suggestions.gif">
+    <img src="https://raw.githubusercontent.com/superJK92iscool/bauh-files/master/pictures/web/suggestions.gif">
 </p>
 
 
 - It relies on [NodeJS](https://nodejs.org/en/), [Electron](https://electronjs.org/) and [nativefier](https://github.com/jiahaog/nativefier) to do all the magic, but you do not need them installed on your system. An isolated installation environment
 will be generated at `~/.local/share/bauh/web/env` (or `/usr/local/share/bauh/web/env` for **root**).
 - It supports DRM protected content through a custom Electron implementation provided by [castLabs](https://github.com/castlabs/electron-releases). nativefier handles the switch between the official Electron and the custom.
-- The isolated environment is created based on the settings defined in [environment.yml](https://raw.githubusercontent.com/vinifmor/bauh-files/master/web/env/v1/environment.yml)
+- The isolated environment is created based on the settings defined in [environment.yml](https://raw.githubusercontent.com/superJK92iscool/bauh-files/master/web/env/v1/environment.yml)
  (downloaded during runtime).
-- Some applications require Javascript fixes to properly work. If there is a known fix, bauh will download the file from [fix](https://github.com/vinifmor/bauh-files/tree/master/web/env/v2/fix) and
+- Some applications require Javascript fixes to properly work. If there is a known fix, bauh will download the file from [fix](https://github.com/superJK92iscool/bauh-files/tree/master/web/env/v2/fix) and
 attach it to the generated app. The fix files are saved on the disk following the pattern `~/.local/share/bauh/web/fixes/electron_{branch}/{app_name}.js` (or `/usr/local/share/bauh/web/fixes/...` for **root**)
 - The installed applications are located at `~/.local/share/bauh/installed` (or `/usr/local/share/bauh/web/installed` for **root**).
 - A desktop entry / menu shortcut will be generated for the installed applications at `~/.local/share/applications` (or `/usr/share/applications` for **root**)
@@ -381,7 +381,7 @@ attach it to the generated app. The fix files are saved on the disk following th
 allowing the application to launch automatically after the system's boot attached to the tray.
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/vinifmor/bauh-files/master/pictures/web/tray.gif">
+    <img src="https://raw.githubusercontent.com/superJK92iscool/bauh-files/master/pictures/web/tray.gif">
 </p>
 
 
@@ -477,13 +477,13 @@ appimage
 ```
 
 ##### <a name="suggestions">Custom suggestions / curated software</a>
-- The software suggestions are download from [bauh-files](https://github.com/vinifmor/bauh-files) by default
-  - [appimage](https://github.com/vinifmor/bauh-files/blob/master/appimage/suggestions.txt)
-  - [arch](https://github.com/vinifmor/bauh-files/blob/master/appimage/suggestions.txt)
-  - [debian](https://github.com/vinifmor/bauh-files/blob/master/debian/suggestions_v1.txt)
-  - [flatpak](https://github.com/vinifmor/bauh-files/blob/master/flatpak/suggestions.txt)
-  - [snap](https://github.com/vinifmor/bauh-files/blob/master/snap/suggestions.txt)
-  - [web](https://github.com/vinifmor/bauh-files/blob/master/web/env/v2/suggestions.yml)
+- The software suggestions are download from [bauh-files](https://github.com/superJK92iscool/bauh-files) by default
+  - [appimage](https://github.com/superJK92iscool/bauh-files/blob/master/appimage/suggestions.txt)
+  - [arch](https://github.com/superJK92iscool/bauh-files/blob/master/appimage/suggestions.txt)
+  - [debian](https://github.com/superJK92iscool/bauh-files/blob/master/debian/suggestions_v1.txt)
+  - [flatpak](https://github.com/superJK92iscool/bauh-files/blob/master/flatpak/suggestions.txt)
+  - [snap](https://github.com/superJK92iscool/bauh-files/blob/master/snap/suggestions.txt)
+  - [web](https://github.com/superJK92iscool/bauh-files/blob/master/web/env/v2/suggestions.yml)
   
 - Most of the files follow the pattern: `{priority_number}=${id or name}`
   - Priority numbers: 0 (LOW), 1 (MEDIUM), 2 (HIGH), 3 (TOP)
@@ -509,15 +509,15 @@ appimage
 #### <a name="custom_themes">Custom themes</a>
 - Custom themes can be provided by adding their files at `~/.local/share/bauh/themes` (or `/usr/share/bauh/themes` for **root**). Sub-folders are allowed. 
 - Themes are composed by 2 required and 1 optional files sharing the same name:
-    - `my_theme.qss`: file with the qss rules. Full example: [light.qss](https://github.com/vinifmor/bauh/blob/master/bauh/view/resources/style/light/light.qss)
-    - `my_theme.meta`: file defining the theme's data. Full example: [light.meta](https://github.com/vinifmor/bauh/blob/master/bauh/view/resources/style/light/light.meta) 
+    - `my_theme.qss`: file with the qss rules. Full example: [light.qss](https://github.com/superJK92iscool/bauh/blob/master/bauh/view/resources/style/light/light.qss)
+    - `my_theme.meta`: file defining the theme's data. Full example: [light.meta](https://github.com/superJK92iscool/bauh/blob/master/bauh/view/resources/style/light/light.meta) 
         - available fields:
             - `name`: name that will be displayed on the interface. It supports translations by adding additional `name` fields with brackets and the language code (e.g: `name[es]=Mi tema`)
             - `description`: theme's description that will be displayed on the interface. It supports translations like `name` (e.g: description[es] = Mi tema).
             - `version`: theme's version. It just works as information at the moment. (e.g: 1.0)
             - `root_theme`: optional attribute that points to a theme that must be loaded before the theme. It supports the bauh's default theme keys (e.g: default, light, ...) or a file path (e.g: `/path/to/root/file.qss`).
-            - `abstract`: optional boolean attribute (true/false) that should only be used by themes that are not complete on their own and just work as a base (root) for other themes. Abstract themes are not displayed on the interface. Full example: [default.qss](https://github.com/vinifmor/bauh/blob/master/bauh/view/resources/style/default/default.qss) 
-    - `my_theme.vars`: optional file defining `key=value` pairs of variables that will be available for the .qss file (can be referenced through the symbol **@**. e.g `@my_var`). Full example: [light.vars](https://github.com/vinifmor/bauh/blob/master/bauh/view/resources/style/light/light.vars)
+            - `abstract`: optional boolean attribute (true/false) that should only be used by themes that are not complete on their own and just work as a base (root) for other themes. Abstract themes are not displayed on the interface. Full example: [default.qss](https://github.com/superJK92iscool/bauh/blob/master/bauh/view/resources/style/default/default.qss) 
+    - `my_theme.vars`: optional file defining `key=value` pairs of variables that will be available for the .qss file (can be referenced through the symbol **@**. e.g `@my_var`). Full example: [light.vars](https://github.com/superJK92iscool/bauh/blob/master/bauh/view/resources/style/light/light.vars)
         - common theme variables available: 
             - `style_dir`: path to the .qss file directory. Example: @style_dir/my_icon.svg
             - `images`: path to bauh's icons directory (gem icons are not available through this variable). Example: @images/logo.svg
@@ -546,7 +546,7 @@ Priority:
 - For a faster initialization process, consider raising the values of the settings properties associated with disk caching and the property `boot.load_apps` to `false`.
 
 
-#### <a name="bauh_files">[bauh-files](https://github.com/vinifmor/bauh-files)</a>
+#### <a name="bauh_files">[bauh-files](https://github.com/superJK92iscool/bauh-files)</a>
 
 It is a separate repository with some files downloaded during runtime.
 
@@ -564,7 +564,7 @@ the `view` code is only attached to them (it does not know how the `gems` handle
 - Separate modules for each packaging technology
 - Memory and performance improvements
 - Improve user experience
-- The current development changes can be checked [here](https://github.com/vinifmor/bauh/blob/staging/CHANGELOG.md)
+- The current development changes can be checked [here](https://github.com/superJK92iscool/bauh/blob/staging/CHANGELOG.md)
     
 #### <a name="donations">Donations</a>
 - You can support this project through [ko-fi](https://ko-fi.com/vinifmor).
